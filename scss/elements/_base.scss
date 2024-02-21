@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1352px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Headings & Paragraphs*/
+h1 {
+  font-family: $font-secondary;
+  font-size: 49px;
+  color: $color-black;
+  line-height: 42px;
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 36px;
+  color: $color-black;
+  line-height: 42px;
+}
+
+p {
+  font-size: 16px;
+  color: $color-black;
+  line-height: 22px;
+}
