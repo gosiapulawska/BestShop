@@ -14,8 +14,7 @@ a {
 }
 
 .container {
-  max-width: 1352px;
-  width: 100%;
+  width: 1352px;
   margin: 0 auto;
 }
 
@@ -38,4 +37,12 @@ p {
   font-size: 16px;
   color: $color-black;
   line-height: 22px;
+}
+
+//Mobile
+@media(max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
