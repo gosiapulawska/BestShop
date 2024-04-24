@@ -53,6 +53,7 @@
   padding: 22px 157px;
   border-radius: 40px;
   font-weight: 700;
+  text-align: center;
 }
 
 .header__image {
@@ -87,6 +88,20 @@
 
 //Mobile
 @media(max-width: 855px) {
+  .header__body {
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .header__title {
+    margin-top: 60px;
+  }
+  .header__button {
+    padding: 22px;
+    width: 100%;
+  }
+  .header__image {
+    width: 200%;
+  }
   .nav__toggle {
     display: block;
   }

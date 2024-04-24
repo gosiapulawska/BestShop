@@ -455,6 +455,7 @@ p {
   padding: 22px 157px;
   border-radius: 40px;
   font-weight: 700;
+  text-align: center;
 }
 
 .header__image {
@@ -486,6 +487,20 @@ p {
 }
 
 @media (max-width: 855px) {
+  .header__body {
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .header__title {
+    margin-top: 60px;
+  }
+  .header__button {
+    padding: 22px;
+    width: 100%;
+  }
+  .header__image {
+    width: 200%;
+  }
   .nav__toggle {
     display: block;
   }
@@ -516,6 +531,82 @@ p {
   }
   .nav__btn:checked ~ .nav__toggle span:nth-child(3) {
     transform: rotate(-45deg) translate(2px, -5px);
+  }
+}
+/*Why us*/
+.why-us {
+  text-align: center;
+}
+
+.why-us__title {
+  margin: 100px 0;
+}
+
+.why-us__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.why-us__item {
+  max-width: 160px;
+  margin: 0 90px 100px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-us__circle {
+  content: "";
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.why-us__item:nth-of-type(1) .why-us__circle {
+  background-color: #FB3B64;
+}
+
+.why-us__item:nth-of-type(2) .why-us__circle {
+  background-color: #08A6E4;
+}
+
+.why-us__item:nth-of-type(3) .why-us__circle {
+  background-color: #55DFB4;
+}
+
+.why-us__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.why-us__number {
+  font-family: "Raleway", sans-serif;
+  margin: 15px 0 20px 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 5.96px;
+}
+
+.why-us__description {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  color: #A5A5A5;
+}
+
+@media (max-width: 855px) {
+  .why-us__title {
+    margin: 60px 0;
+  }
+  .why-us__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-us__item {
+    margin-bottom: 50px;
   }
 }
 
