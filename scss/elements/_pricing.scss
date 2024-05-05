@@ -1,0 +1,141 @@
+/*Pricing*/
+.pricing {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+
+.pricing__content {
+  max-width: 1266px;
+}
+
+.pricing__title {
+  margin-bottom: 50px;
+}
+
+.pricing__columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 372px;
+  padding: 34px 34px 81px 34px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.pricing__column--basic {
+  border: 1px solid $color-redish;
+}
+
+.pricing__column--professional {
+  width: 405px;
+  border: 1px solid $color-primary;
+  box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing__column--premium {
+  border: 1px solid $color-green;
+}
+
+.pricing__name {
+  margin-bottom: 30px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing__column--professional .pricing__name {
+  font-size: 21px;
+}
+
+.pricing__value {
+  font-size: 46px;
+  font-weight: 300;
+}
+
+.pricing__column--basic .pricing__value {
+  margin-bottom: 90px;
+  color: $color-redish;
+}
+
+.pricing__column--professional .pricing__value {
+  color: $color-primary;
+  margin-bottom: 25px;
+}
+
+.pricing__column--premium .pricing__value {
+  color: $color-green;
+  margin-bottom: 25px;
+}
+
+.pricing__offer {
+  font-family: $font-secondary;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.pricing__column--professional .pricing__offer {
+  margin-bottom: 60px;
+}
+
+.pricing__item {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.pricing__item::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing__item--none::before {
+  background-image: url("../assets/Close.svg");
+}
+
+.pricing__button {
+  padding: 16px 57px;
+  display: block;
+  border-radius: 23px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pricing__button.button--pink, .pricing__button.button--green{
+  color: $color-white;
+}
+
+@media(max-width: 1325px) {
+  .pricing__columns {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+  }
+  .pricing__column {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 34px;
+  }
+}
+
+@media(max-width: 400px) {
+  .pricing__column {
+    padding: 24px;
+    width: 100%;
+  }
+}
